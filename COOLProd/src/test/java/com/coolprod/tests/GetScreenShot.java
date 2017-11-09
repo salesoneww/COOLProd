@@ -15,8 +15,8 @@ public class GetScreenShot {
         File source = ts.getScreenshotAs(OutputType.FILE);
         String dest = System.getProperty("user.dir") +"\\FailureScreenshots\\"+screenShotName+".png";
         File destination = new File(dest);
-        FileUtils.copyFile(source, destination);        
-                     
+        FileUtils.copyFile(source, destination);  
+                
         return dest;
     }
 }
