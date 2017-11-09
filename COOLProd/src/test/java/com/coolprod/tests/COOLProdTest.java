@@ -30,6 +30,15 @@ public class COOLProdTest {
         extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/MonitoringResults.html", true);
     }
      
+    
+    
+    
+    
+    
+    
+    
+    
+    
     @Test
     public void coolStagingTest() throws InterruptedException
     {
@@ -41,7 +50,7 @@ public class COOLProdTest {
         WebElement ele=driver.findElement(By.xpath("//a[contains(text(),'IBM intranet password')]"));
         String content=ele.getText();
         System.out.println("Site secured message :  "+content);
-        System.out.println("Site secured message :  "+content);
+        //System.out.println("Site secured message :  "+content);
         Assert.assertEquals("IBM intranet password", content);
         test.log(LogStatus.PASS, "Site secured by");
         boolean searchEmailPresence = driver.findElement(By.xpath("//input[@name='username']")).isDisplayed();
