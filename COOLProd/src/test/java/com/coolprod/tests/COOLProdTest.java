@@ -29,16 +29,7 @@ public class COOLProdTest {
     	driver = new FirefoxDriver();
         extent = new ExtentReports(System.getProperty("user.dir") + "/test-output/MonitoringResults.html", true);
     }
-     
-    
-    
-    
-    
-    
-    
-    
-    
-    
+         
     @Test
     public void coolStagingTest() throws InterruptedException
     {
